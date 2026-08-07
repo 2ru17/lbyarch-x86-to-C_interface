@@ -33,4 +33,4 @@ The execution time scales linearly with the number of pixels. Processing 10,000 
 ![Correctness Output](./CorrectnessOutput_Gutang-Wong.png)
 
 ## Demo Video
-*(Insert Link to 5-10 minute Youtube/Gdrive demo video here)*
+[YouTube Demo Video](https://youtu.be/3Lelhl8bni4)
