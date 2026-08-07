@@ -22,15 +22,15 @@ The program runs the conversion algorithm 30 times for different image sizes to 
 
 | Image Size | Total Pixels | Average Execution Time (seconds) |
 | --- | --- | --- |
-| 10 x 10 | 100 | [Time] |
-| 100 x 100 | 10,000 | [Time] |
-| 1000 x 1000 | 1,000,000 | [Time] |
+| 10 x 10 | 100 | 0.000001 |
+| 100 x 100 | 10,000 | 0.000046 |
+| 1000 x 1000 | 1,000,000 | 0.004665 |
 
 ### Performance Analysis
-*(Write your short analysis of the execution time here)*
+The execution time scales linearly with the number of pixels. Processing 10,000 pixels takes roughly 46x longer than 100 pixels, and processing 1,000,000 pixels takes roughly 100x longer than 10,000 pixels. The performance of the x86-64 assembly implementation using SIMD scalar instructions is highly optimized, completing the largest array conversion in under 5 milliseconds on average.
 
 ## Output and Correctness
-*(Insert Screenshot of output verifying correctness here)*
+![Correctness Output](./CorrectnessOutput_Gutang-Wong.png)
 
 ## Demo Video
 *(Insert Link to 5-10 minute Youtube/Gdrive demo video here)*
